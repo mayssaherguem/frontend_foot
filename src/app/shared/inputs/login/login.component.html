@@ -1,0 +1,17 @@
+<mat-form-field #loginInput1 appearance="outline"  
+style="width: 100%;height:100%;font-size: 1em; border: 0px solid transparent; color: white;margin-top:-2% !important;">
+    <!-- <mat-label></mat-label> -->
+    <input matInput color="primary" (keyup)="onKey($event)"  
+    [formControl]="log_in" pattern="[a-zA-Z ]*"  
+    placeholder="Login" 
+    
+    required>
+    <mat-error *ngIf="log_in.hasError('login') && !log_in.hasError('required')">
+      <!-- Please enter a valid login -->
+      Merci d'entrer un login valide
+    </mat-error>
+    <mat-error *ngIf="log_in.hasError('required')">
+      <!-- login is <strong>required</strong> -->
+      login est <strong>requis</strong>
+    </mat-error>
+</mat-form-field>

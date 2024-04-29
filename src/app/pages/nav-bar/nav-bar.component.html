@@ -1,0 +1,32 @@
+<div class=" d-flex justify-content-between align-items-center"
+    style="height: 100%; width: 100%; padding: 0.5%; background-color: #84bd56;position: relative;"   >  
+   <!-- <div class=" d-flex justify-content-between align-items-center" style="height: 10vh; width: 100%; padding: 0.5%; background-color: #4c6ef8;"   >   -->
+   
+   <div class="d-flex justify-content-between align-items-center" style="width: 25%; height: 80%; ">
+      <!-- <button (click)="toggleMenu()" class="hamburger">
+         <span>toggle menu</span>
+       </button> -->
+
+       <button (click)="toggleMenu()" class="menu-button">
+         <div class="bar" [@menuState]="menuState"></div>
+         <div class="bar" [@menuState]="menuState"></div>
+         <div class="bar" [@menuState]="menuState"></div>
+       </button>
+   </div>
+
+   
+
+   <div class="d-flex justify-content-center align-items-center" style="width: 50%; height: 100%; font-family: Revamped; font-weight: bold; color: #fdf100; font-size: 2em;">
+      <!-- <div class="d-flex justify-content-center align-items-center" style="width: 40%; height: 100%; font-family: Roboto; font-weight: bold; color: white; font-size: 2em;"> -->
+      {{title}}
+   </div>
+
+   <div style="width: 25%; height: 100%;" class="d-flex justify-content-end div_logo">
+      <button (click)="logout()" class="div_logo-button">
+         <img src="../../../assets/images/logout.png" style="width: auto; height: 100%;">
+      </button>
+   </div> 
+
+</div>
+
+

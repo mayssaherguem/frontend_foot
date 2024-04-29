@@ -1,0 +1,67 @@
+
+.global
+{
+    
+    width: 100%;height:100%;font-family: fontFont;letter-spacing: 2px;
+    background: url('../../../assets/images/Image1.png') no-repeat;
+    //background: var(--backgroundAuth);
+    background-size: 110% 110%;
+    background-position: center;
+}
+.global1
+{
+    
+    width: 100%;height:100%;font-family: fontFont;letter-spacing: 2px;
+    background: var(--backgroundAuth);
+    background-size: 100% 100%;
+    background-position: center;
+    
+}
+.box_auth
+{
+    display: flex;flex-direction: column;justify-content: space-around;
+    // border: solid 1px #ff30fe;
+    border-radius: 3px;
+    padding:15px 15px; 
+    // background:linear-gradient(to bottom , rgba($color: #fb4de1, $alpha: 0.4),
+    // rgba($color: #d341be, $alpha: 0.2),rgba($color: #d341be, $alpha: 0.2),
+    // rgba($color: #d341be, $alpha: 0.2));
+    // border:solid 1px #d341be;
+    //  background:linear-gradient(to bottom right, rgba(rgb(182, 250, 255),0.1),rgba(rgb(220, 220, 220),0.1));
+}
+
+@media only screen and (orientation: portrait) {
+
+    .global
+    {
+      width: 100%; 
+      height:900px;
+      background: var(--bgColor);
+      //background: "../../../assets/images/bagLightMobile.jpg" no-repeat;
+      
+    }
+    
+    :host ::ng-deep .mat-form-field-appearance-outline .mat-form-field-wrapper
+    {
+        margin: 0;
+    }
+
+    :host ::ng-deep .mat-form-field-appearance-outline.mat-form-field-invalid.mat-form-field-invalid .mat-form-field-outline-thick
+    {
+        color: transparent;
+    }
+
+    :host ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline
+    {
+        position: initial;
+        color: transparent;
+    }
+
+    :host ::ng-deep .mat-form-field-appearance-outline .mat-form-field-outline
+    {
+        background: transparent;
+        border: 0px solid transparent;
+        height: 100%;
+        top: 0;
+    }
+}

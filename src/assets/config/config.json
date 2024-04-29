@@ -1,0 +1,7 @@
+{
+    "langue":"fr",
+
+    "front_ip": "192.168.100.5:4000",
+    "server_ip": "localhost:8088"
+    
+}

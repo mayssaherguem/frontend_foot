@@ -1,0 +1,10 @@
+
+<div class="d-flex flex-column justify-content-between " style="width: 100%; height: 97vh;  ">
+
+    <div  class=" d-flex flex-column justify-content-between " style="height: 90vh; width: 100%; padding: 0.5%; overflow-y: auto; overflow-x: hidden;" >
+        <ng2-smart-table *ngIf="issetting" [settings]="settings" [source]="source" (createConfirm)="onCreateConfirm($event)" (deleteConfirm)="onDeleteConfirm($event)" (editConfirm)="onEditConfirm($event)"></ng2-smart-table>
+        
+    </div>
+
+</div>
+

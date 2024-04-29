@@ -1,0 +1,89 @@
+
+<!-- BODY -->
+
+<div class="d-flex flex-column justify-content-between " style="width: 100%; height: 100vh; overflow-y: auto; overflow-x: hidden; ">
+
+   <div *ngIf="isDone" class=" d-flex flex-column justify-content-between " style="height: 93vh; width: 100%; padding: 0.5%;" >
+      
+      <!--select Button-->
+   
+      <!-- 4 gauge  -->
+      <div  class=" d-flex justify-content-between " style="height: 35% ; width: 100%;  "  >
+   
+         <!-- gauge 1 -->
+         <div class="div_gauge" >
+   
+            <gauge title="total distance" [value]="value1.value"  [min]="value1.min" [max]="value1.max" ></gauge>
+         </div>
+         
+          <!-- gauge 2 -->
+          <div class="div_gauge" >
+   
+            <gauge title="high speed distance" [value]="value2.value"  [min]="value2.min" [max]="value2.max" ></gauge>
+            
+          </div>
+         
+          <!-- gauge 3 -->
+          <div class="div_gauge" >
+   
+            <gauge title=" sprint efforts" [value]="value3.value"  [min]="value3.min" [max]="value3.max" ></gauge>
+            
+          </div>
+   
+           <!-- gauge 4 -->
+         <div class="div_gauge" >
+   
+            <gauge title="accelerations" [value]="value4.value"  [min]="value4.min" [max]="value4.max" ></gauge>
+            
+         </div>
+   
+      </div>
+   
+      <!-- player statistics -->
+      <div class=" d-flex  justify-content-between " style="height: 63.5% ; width: 100%;"  >
+   
+         <!-- player kpi1 -->
+         <div class="div_gauge" >
+            <bar [data]="data1" color="#00f" ></bar>
+         </div>
+   
+         <!-- player kpi2 -->
+         <div class="div_gauge" >
+            <bar [data]="data2" color="#0f0"  ></bar>
+   
+         </div>
+   
+         <!-- player kpi3 -->
+         <div class="div_gauge" >
+            <bar  [data]="data3"  color="#FFC600"  ></bar>
+   
+         </div>
+   
+         <!-- player kpi4 -->
+         <div class="div_gauge" >
+            <bar [data]="data4"  color="#f00"  ></bar>
+         </div>
+   
+   
+   
+      </div>
+   
+      <!-- global team mesurment -->
+      <div>
+   
+         
+      </div>
+   
+   
+   </div>
+   
+  
+   
+
+</div>
+
+<!-- footer -->
+<div style="height: 3vh; width: 100%; " > 
+
+
+</div>

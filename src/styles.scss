@@ -1,0 +1,268 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$QoS-primary: mat.define-palette(mat.$indigo-palette);
+$QoS-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$QoS-warn: mat.define-palette(mat.$red-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$QoS-theme: mat.define-light-theme((
+  color: (
+    primary: $QoS-primary,
+    accent: $QoS-accent,
+    warn: $QoS-warn,
+  )
+));
+
+@include mat.all-component-themes($QoS-theme);
+
+html, body 
+{ 
+    width: 100%;
+    height: 100%; 
+    // overflow-y: hidden;
+    // overflow-x: hidden;
+    background: #f2f4f8;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@import "~@angular/material/theming";
+@import "~bootstrap/dist/css/bootstrap.css";
+
+@import "~leaflet/dist/leaflet.css";
+
+@font-face
+{
+    font-family: kosmikvibes;
+    src: url(assets/fonts/KozmikVibez-z8gLa.ttf);
+}
+@font-face
+{
+    font-family: Revamped;
+    src: url(assets/fonts/Revamped-X3q1a.ttf);
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  overflow-y: scroll;
+  background:#989103;
+  box-shadow: inset 0 0 4px #989103;
+  border-radius: 10px;
+
+}
+::-webkit-scrollbar {
+  height: 7px;
+  overflow-x: scroll;
+  background:#989103;
+  box-shadow: inset 0 0 4px #989103;
+  border-radius: 10px;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e2dd72;//couleur barre
+  border-radius: 10px;
+
+}
+
+.divglob
+{
+    width: 100%;height:89%;
+    display: flex;
+    justify-content: space-between;
+    background-color:var(--bgColor);
+    padding:0.5% 0.5% 0.5% 0.5%;
+}
+:host ::ng-deep ng2-smart-table table
+{
+    height: 90%;
+ 
+    border-radius: 4px;color:white;
+}
+
+:host ::ng-deep ng2-smart-table table thead tr th a
+{
+    text-align:center;
+    color:#fff;
+}
+
+:host ::ng-deep ng2-smart-table table thead tr th
+{
+    text-align:center;
+    font-weight:bold;
+    color:#fff; 
+}
+
+.ng2-smart-table table tbody tr 
+{
+    text-align:center;
+    font-weight:bold;
+    color:#fff; 
+    font-size: 1.7vh;
+}
+
+// .ng2-smart-table table tbody tr a
+// {
+//     color:#fff; 
+
+    
+// }
+a.ng2-smart-page-link.page-link {
+
+  text-align: center;
+
+  color: white;background-color: #0d5d0a;border:none;
+
+  }
+  span.ng2-smart-page-link.page-link {
+    
+    color: white;
+    background-color: #fdf100;border:none;
+    }
+.ng2-smart-table table tbody tr td 
+{
+    text-align:center;
+    font-weight:bold;
+    color:var(--textColor); 
+
+}
+td.ng2-smart-table 
+{
+
+    font-size: 10px !important;
+}
+
+table, td
+{
+  text-align: center;
+  //padding:5px 2px !important;
+  line-height: normal !important;
+  font-size: 1.7vh;
+}
+td{height:5vh !important;}
+.mat-expansion-indicator
+{
+  color:var(--textColor) !important;
+}
+.mat-expansion-indicator::after
+{
+  color: var(--textColor) !important;
+}
+.ng2-smart-table .ng2-st-tbody-edit-delete
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.ng2-smart-row.selected
+{
+    background-color: #fdf10055 !important;
+}
+
+.ng2-smart-table table thead tr th .ng2-smart-table-filter 
+{
+  color:#fff;
+}
+.ng2-smart-filter
+{
+  font-size:1.5vh;
+
+}
+
+.ng2-smart-titles th{ 
+    background:#0d5d0a;
+    text-align: center;
+    color: #fff;
+}
+.ng2-smart-titles th a{ 
+
+  color: #fff;
+ // font-size:1.4vh;
+}
+
+
+.ng2-smart-filters 
+{
+  background: rgba(104, 155, 200, 0.1);
+}
+td
+{
+  color: var(--textColor) !important;
+  border-bottom:solid 1px #5e2e7d;
+  padding:0px 0px !important;
+}
+.navbar_
+{
+    height: 8vh;width: 100%;
+    background-color: var(--baseColor);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;background-size: cover;
+    color:#e5e0fe;
+    font-size: 2.5vh;font-family: Revamped;
+    display: flex;
+    letter-spacing: 4px;
+    align-items: center;
+}
+::ng-deep .mat-form-field-appearance-outline .mat-form-field-infix {
+  padding:0px 0px !important;  
+  
+}
+
+
+.footer
+{
+  background-color:  var(--baseColor);
+}
+
+.cdk-overlay-container, .cdk-overlay-pane {
+  z-index: 9999 !important;
+}
+
+
+
+.mat-expansion-panel-spacing
+{
+  margin: 0 0 !important;
+}
+.mat-drawer.mat-drawer-side
+{
+  z-index: 9999 !important;
+}
+.mat-expansion-panel
+{
+  box-shadow: none !important;
+}
+.mat-expansion-panel-header.mat-expanded
+{
+  height:50px !important;
+}
+
+::ng-deep .mat-dialog-container
+{
+  background-color: transparent !important;
+  
+}
+@media only screen and (orientation: portrait) {
+    
+  html, body 
+  { 
+    height: 100%; 
+    overflow-y: scroll;
+   // overflow-x: hidden;
+  }
+}

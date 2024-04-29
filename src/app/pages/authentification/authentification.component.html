@@ -1,0 +1,53 @@
+<div class="global">
+    <div class="d-flex justify-content-between" style="width: 100%;height:15%;">
+        <!-- <div 
+            class="d-flex align-items-center "
+            style="width: 30%;height:100%; padding-left: 2vw;">
+            <img src="{{themeClient.getLogos()['logoReg'][themeClient.getTheme()]}}"
+            style="height:75%;width:auto;">
+        </div>
+        <div class="d-flex align-items-center justify-content-center"
+        style="width: 10%;height:100%;">
+            <img src="{{themeClient.getLogos()['logoTekside'][themeClient.getTheme()]}}" style="height:70%;width:auto;">
+        </div> -->
+    </div>
+    <div style="width: 60%;height:82%;">
+        <div class="d-flex align-item-center justify-content-center" style="width: 100%;height:20%;">
+            <div class="d-flex flex-column align-item-center justify-content-center">
+                <h3 style="color:#09701e;letter-spacing: 2px;font-size: 3vh; font-family: Revamped;">
+                    Authentification
+                </h3>
+                
+            </div>
+        </div>
+        
+        <div class="d-flex align-items-center justify-content-center" 
+            style="width: 100%;height:45%;">
+            <div class="box_auth" style="width: 50%;height:90%;">
+                <div style="width: 100%;height:20%;background:linear-gradient(to right, #60b93155, #60b931) !important;
+                border-radius: 25px;">
+                    <app-input (login_)="getLogin($event)" [login_vide]="emptyLog" id="login" (keydown.enter)="auth()" style="width: 90%;height:100%; "></app-input>
+                </div>
+                <div style="width: 100%;height:20%;background:linear-gradient(to right, #60b93155, #60b931) !important;
+                border-radius: 25px;">
+                    <app-pass (pass_)="getPassword($event)" [pass_vide]="emptyPass" id="password" (keydown.enter)="auth()"
+                    style="width: 90%;height:100% !important;">
+                    </app-pass>
+                </div>
+                <div style="width: 100%;height:17%;">
+                    <app-round-borders nom="Valider" style="width: 50% !important;height:10%" (click)="auth()"></app-round-borders>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div style="width: 100%;height:3%;">
+
+    </div> -->
+    <div class="d-flex justify-content-center align-items-center" 
+        style="position:absolute;bottom:0;height:3%;width:100%;color:var(--textColor);font-size:1.7vh;font-weight: bold;
+        letter-spacing: 2px;">
+        <!-- <span style="font-family:kosmikvibes;margin-left:75px;">QUALCOP PLATFORM - TEKSIDE </span>
+        <span style="font-family: Arial, Helvetica, sans-serif;">®</span> -->
+    </div>
+    
+</div> 

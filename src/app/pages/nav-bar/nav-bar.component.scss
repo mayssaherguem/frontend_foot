@@ -1,0 +1,202 @@
+.div_logo
+{
+  width: 10%;
+  height: 100%;
+}
+
+.div_logo-button
+{
+  background-color: transparent;
+  border: 0px solid transparent;
+}
+.div_gauge
+{
+
+   height: 100%;
+   width: 24.4%;
+   border-radius: 5px;
+   background-color: white;
+  // padding: 0.5%;
+   
+}
+
+.select_btn
+{
+  //width: 49%;
+  height: 100%;
+}
+
+:host ::ng-deep .mat-form-field
+{
+  height: 100%;
+  width: 100%;
+}
+
+:host ::ng-deep .mat-form-field-appearance-legacy .mat-form-field-wrapper {
+  padding-bottom: 0em; 
+  height: 100%;
+}
+
+:host ::ng-deep .mat-select-value-text
+{
+  color: rgba(255, 255, 255, 1) !important
+}
+
+:host ::ng-deep .mat-form-field-flex {
+ // background: #4c6ef8;
+  border: solid 1px #bbdefb;
+  border-radius: 3px;
+  height: 100%;
+}
+
+::ng-deep .mat-select-panel
+{
+  background: #4c6ef8;
+  margin: 20% 5%;
+}
+
+::ng-deep .mat-form-field-appearance-legacy .mat-form-field-underline
+{
+  height: 0px !important;
+}
+
+::ng-deep .mat-form-field.mat-focused .mat-form-field-ripple {
+  background-color: transparent;
+  height: 0px;
+}
+
+::ng-deep .mat-form-field-hide-placeholder .mat-select-placeholder
+{
+  color: rgba(255, 255, 255, 0.5) !important;
+  -webkit-text-fill-color : rgba(255, 255, 255, 0.5) !important;
+}
+
+:host :ng-deep .mat-select-placeholder
+{
+  color: #111 !important;
+}
+
+::ng-deep .mat-form-field-appearance-legacy .mat-form-field-infix
+{
+  padding: 2% 3%;
+}
+
+::ng-deep .mat-option
+{
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+
+::ng-deep .mat-option.mat-active
+{
+  color: rgba(255, 255, 255, 1) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// p {
+//   font-family: Lato;
+// }
+// .hamburger {
+//   display: block;
+//   position: relative;
+//   overflow: hidden;
+//   margin: 0;
+//   padding: 0;
+//   width: 96px;
+//   height: 96px;
+//   font-size: 0;
+//   text-indent: -9999px;
+//   cursor: pointer;
+//   outline: none;
+//   background: none;
+//   border: 0;
+// }
+ 
+ 
+// .hamburger span {
+//   display: block;
+//   position: absolute;
+//   top: 44px;
+//   left: 18px;
+//   right: 18px;
+//   height: 8px;
+//   background: #1a2580;
+// }
+ 
+// .hamburger span::before,
+// .hamburger span::after {
+//   display: block;
+//   position: absolute;
+//   left: 0;
+//   width: 100%;
+//   height: 8px;
+//   background-color: #1a2580;
+//   content: "";
+// }
+ 
+// .hamburger span::before {
+//   top: -20px;
+// }
+ 
+// .hamburger span::after {
+//   bottom: -20px;
+// }
+
+
+.menu-button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.bar {
+  width: 30px;
+  height: 3px;
+  background-color: #fef200;
+  margin: 3px 0;
+  transition: transform 0.3s ease;
+}
+
+/* Animation States */
+:host {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.in {
+  transform: rotate(0deg);
+}
+
+.out {
+  transform: rotate(45deg);
+}
+
+
+
+
+
